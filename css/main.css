@@ -1,6 +1,7 @@
 :root {
-  --header-height:70px;
-  --header-logo-height:40px;
+  --header-height: 70px;
+  --header-logo-height: 40px;
+  --aside-logo-height: 40px;
 }
 
 * {
@@ -31,12 +32,14 @@
 
 header {
   position: fixed;
+  right: 0px;
   width: 100%;
   display: flex;
   height: var(--header-height);
   align-items: center;
   justify-content: center;
   background-color: #1abc9c;
+  z-index: 2;
 }
 header a {
   vertical-align: middle;
@@ -44,18 +47,6 @@ header a {
 }
 header a:hover {
   color: #ee7c39;
-}
-
-.header__logo {
-  flex: 10%;
-  flex-shrink: 0;
-  padding: 0px 20px;
-}
-.header__logo img {
-  height: var(--header-logo-height);
-  display: block;
-  margin: 0 auto;
-  object-fit: cover;
 }
 
 .header__search {
@@ -162,6 +153,103 @@ header a:hover {
 
 .header__right--item:hover .title {
   display: block;
+}
+
+aside {
+  display: flex;
+  width: 100%;
+  position: fixed;
+  left: 0px;
+  height: calc(100vh - 70px);
+  flex-direction: column;
+  background-color: #1abc9c;
+  padding: 0px !important;
+  background-image: url(../media/img/hinh-o-vuong.png);
+}
+aside hr {
+  margin: 10px;
+}
+
+.aside__logo {
+  padding: 15px 20px;
+}
+.aside__logo img {
+  height: var(--aside-logo-height);
+  display: block;
+  object-fit: cover;
+}
+
+.aside__menu--item {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.aside__menu--item li {
+  padding: 10px 20px;
+}
+.aside__menu--item li ion-icon {
+  vertical-align: middle;
+  text-align: center;
+  font-size: x-large;
+  padding-right: 5px;
+}
+.aside__menu--item li span {
+  vertical-align: middle;
+  font-weight: 500;
+  font-size: medium;
+}
+.aside__menu--item li:hover a {
+  color: #ee7c39;
+}
+.aside__menu--item li:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.aside__menu--item-live {
+  background-color: red;
+  padding: 5px 10px;
+  margin-left: 5px;
+  border-radius: 5px;
+  font-size: 10px !important;
+  font-weight: bold !important;
+  color: white;
+}
+
+.aside__scroll {
+  overflow-y: scroll;
+}
+
+.aside__scroll::-webkit-scrollbar {
+  width: 5px;
+  background-image: url(../media/img/hinh-o-vuong.png);
+  background-color: #1abc9c;
+}
+
+.aside__scroll::-webkit-scrollbar-thumb {
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 3px rgb(0, 0, 0);
+  background-color: #ee7c39;
+}
+
+.aside__upgrade-vip {
+  padding: 10px;
+  margin: 20px;
+  text-align: center;
+  background: linear-gradient(to right, rgba(21, 21, 21, 0.7), rgba(7, 52, 188, 0.8));
+  border-radius: 10px;
+}
+.aside__upgrade-vip p {
+  color: white;
+  font-size: smaller;
+}
+.aside__upgrade-vip button {
+  width: 90%;
+  padding: 5px;
+  border-radius: 20px;
+  border: 0;
+  background-color: yellow;
+  font-weight: 600;
+  font-size: smaller;
 }
 
 /*# sourceMappingURL=main.css.map */

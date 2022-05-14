@@ -34,56 +34,146 @@
 </head>
 
 <body>
-    <header>
-        <div class="header__logo">
-            <a href=""><img src="media/img/logo.png" alt=""></a>
+    <div class="container-fluid">
+        <div class="row">
+            <header class="col-lg-10">
+                <div class="header__search">
+                    <div class="header__left">
+                        <div class="header__left--btn-back">
+                            <a href="">
+                                <ion-icon name="arrow-back-outline"></ion-icon>
+                            </a>
+                        </div>
+                        <div class="header__left--btn-next">
+                            <a href="">
+                                <ion-icon name="arrow-forward-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="header__center">
+                        <div class="header__center--input">
+                            <form action=""><input type="text" placeholder="Nhập tên bài hát, nghệ sĩ hoặc MV"></form>
+                        </div>
+                        <div class="header__center--search-btn">
+                            <a href="">
+                                <ion-icon name="search-outline" title="Tìm kiếm"></ion-icon>
+                            </a>
+                            <div class="title"><span>Tìm kiếm</span></div>
+                        </div>
+                    </div>
+                    <div class="header__right">
+                        <div class="header__right--item">
+                            <a href="">
+                                <ion-icon name="shirt-outline"></ion-icon>
+                            </a>
+                            <div class="title"><span>Chủ đề</span></div>
+                        </div>
+                        <div class="header__right--item">
+                            <a href="">
+                                <ion-icon name="diamond-outline"></ion-icon>
+                            </a>
+                            <div class="title"><span>Nâng cấp VIP</span></div>
+                        </div>
+                        <div class="header__right--item" title="Tải lên">
+                            <a href="">
+                                <ion-icon name="cloud-upload-outline"></ion-icon>
+                            </a>
+                            <div class="title"><span>Tải lên</span></div>
+                        </div>
+                        <div class="header__right--avatar">
+                            <a href="">
+                                <img src="media/img/avatar.jpg" alt="">
+                            </a>
+                            <div class="title"><span>Cá nhân</span></div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <aside class="col-lg-2">
+                <div class="aside__logo">
+                    <a href=""><img src="media/img/logo.png" alt=""></a>
+                </div>
+
+                <nav class="aside__menu">
+                    <ul class="aside__menu--item">
+                        <li>
+                            <a href="">
+                                <ion-icon name="person-circle-outline"></ion-icon>
+                                <span>Cá Nhân</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <ion-icon name="disc-outline"></ion-icon>
+                                <span>Khám Phá</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <ion-icon name="analytics-outline"></ion-icon>
+                                <span>#robotchart</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <ion-icon name="radio-outline"></ion-icon>
+                                <span>Radio</span>
+                                <span class="aside__menu--item-live">LIVE</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <ion-icon name="document-text-outline"></ion-icon>
+                                <span>Theo Dõi</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <hr>
+
+                <div class="aside__scroll">
+                    <nav class="aside__menu">
+                        <ul class="aside__menu--item">
+                            <li>
+                                <a href="">
+                                    <ion-icon name="musical-notes-outline"></ion-icon>
+                                    <span>Nhạc Mới</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <ion-icon name="grid-outline"></ion-icon>
+                                    <span>Thể Loại</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <span>Top 100</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <ion-icon name="videocam-outline"></ion-icon>
+                                    <span>MV</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <div class="aside__upgrade-vip">
+                        <p>Nghe nhạc không quảng cáo cùng kho nhạc VIP</p>
+                        <button>NÂNG CẤP VIP</button>
+                    </div>
+
+                </div>
+                
+                
+            </aside>
         </div>
-        <div class="header__search">
-            <div class="header__left">
-                <div class="header__left--btn-back">
-                    <a href="">
-                        <ion-icon name="arrow-back-outline"></ion-icon>
-                    </a>
-                </div>
-                <div class="header__left--btn-next">
-                    <a href="">
-                        <ion-icon name="arrow-forward-outline"></ion-icon>
-                    </a>
-                </div>
-            </div>
-            <div class="header__center">
-                <div class="header__center--input">
-                    <form action=""><input type="text" placeholder="Nhập tên bài hát, nghệ sĩ hoặc MV"></form>
-                </div>
-                <div class="header__center--search-btn">
-                    <a href=""><ion-icon name="search-outline" title="Tìm kiếm"></ion-icon></a>
-                    <div class="title"><span>Tìm kiếm</span></div>
-                </div>
-            </div>
-            <div class="header__right">
-                <div class="header__right--item">
-                    <a href="">
-                        <ion-icon name="shirt-outline"></ion-icon>
-                    </a>
-                    <div class="title"><span>Chủ đề</span></div>
-                </div>
-                <div class="header__right--item">
-                    <a href=""><ion-icon name="diamond-outline"></ion-icon></a>
-                    <div class="title"><span>Nâng cấp VIP</span></div>
-                </div>
-                <div class="header__right--item" title="Tải lên">
-                    <a href=""><ion-icon name="cloud-upload-outline"></ion-icon></a>
-                    <div class="title"><span>Tải lên</span></div>
-                </div>
-                <div class="header__right--avatar">
-                    <a href="">
-                        <img src="media/img/avatar.jpg" alt="">
-                    </a>
-                    <div class="title"><span>Cá nhân</span></div>
-                </div>  
-            </div>
-        </div>
-    </header>
+    </div>
+
 </body>
 
 </html>
