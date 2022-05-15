@@ -27,7 +27,8 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-    <!-- CSS -->
+
+    <!--CSS -->
     <link rel="stylesheet" href="css/main.css">
 
 
@@ -112,7 +113,7 @@
                         <li>
                             <a href="">
                                 <ion-icon name="analytics-outline"></ion-icon>
-                                <span>#robotchart</span>
+                                <span>#rank</span>
                             </a>
                         </li>
                         <li>
@@ -166,11 +167,1125 @@
                         <p>Nghe nhạc không quảng cáo cùng kho nhạc VIP</p>
                         <button>NÂNG CẤP VIP</button>
                     </div>
+                    <nav class="aside__menu">
+                        <h1>THƯ VIỆN</h1>
+                        <ul class="aside__menu--item">
+                            <li>
+                                <a href="">
+                                    <i class="bi bi-file-earmark-music"></i>
+                                    <span>Bài Hát</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="bi bi-boombox"></i>
+                                    <span>Playlist</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <i class="bi bi-arrow-clockwise"></i>
+                                    <span>Gần đây</span>
+                                </a>
+                            </li>
 
+                        </ul>
+                    </nav>
                 </div>
-                
-                
+                <hr>
+                <div class="aside__create-playlist">
+                    <a href="">
+                        <ion-icon name="add-outline"></ion-icon>
+                        <h1>Tạo playlist mới</h1>
+                    </a>
+                </div>
             </aside>
+
+            <main class="col-lg-10">
+                <div class="banner">
+                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="3000">
+                                <div class="main__slide-banner">
+                                    <div class="main__slide-banner--item">
+                                        <a href=""><img src="media/img/co-khong-giu-mat-dung-tim.jpg"
+                                                class="d-block w-100" alt="..."></a>
+                                    </div>
+
+                                    <div class="main__slide-banner--item">
+                                        <a href=""><img src="media/img/ke-nam-nguoi-buong.jpg" class="d-block w-100"
+                                                alt="..."></a>
+                                    </div>
+
+                                    <div class="main__slide-banner--item">
+                                        <a href=""><img src="media/img/khi-em-xa-anh.jpg" class="d-block w-100"
+                                                alt="..."></a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <div class="main__slide-banner">
+                                    <div class="main__slide-banner--item">
+                                        <a href=""><img src="media/img/nha-nha-nghe-gi.jpg" class="d-block w-100"
+                                                alt="..."></a>
+                                    </div>
+
+                                    <div class="main__slide-banner--item">
+                                        <a href=""> <img src="media/img/xin-loi-anh-yeu-em.jpg" class="d-block w-100"
+                                                alt="..."></a>
+                                    </div>
+                                    <div class="main__slide-banner--item">
+                                        <a href=""><img src="media/img/thuong-em.jpg" class="d-block w-100"
+                                                alt="..."></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Recently-->
+                <div class="main__recently">
+                    <div class="main__recently-title">
+                        <div class="main__recently-title--item">
+                            <h1>Gần Đây</h1>
+                        </div>
+                        <div class="main__recently-title--item">
+                            <a href="">
+                                <span>TẤT CẢ</span>
+                                <ion-icon name="chevron-forward-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="main__recently-items">
+                        <div class="main__recently-item">
+                            <div class="main__recently-item--card">
+                                <a href="" title="Cà Phê Quán Quen">
+                                    <img src="media/img/ca-phe-quan-qen.webp" alt="">
+                                </a>
+                                <div class="main__overlay" title="Cà Phê Quán Quen">
+                                    <div class="main__overlay--item">
+                                        <a href="" title="Thêm vào thư viện">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Phát nhạc">
+                                            <ion-icon name="caret-forward-circle-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Khác">
+                                            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__recently-item--info">
+                                <a href="" title="Cà Phê Quán Quen">
+                                    <h1>Cà Phê Quán Quen</h1>
+                                </a>
+
+                            </div>
+                        </div>
+                        <div class="main__recently-item">
+                            <div class="main__recently-item--card">
+                                <a href="" title="Góc nhạc Mr Siro"> <img src="media/img/goc-nhac-mr-siro.jpg" alt="">
+                                </a>
+                                <div class="main__overlay" title="Góc nhạc Mr Siro">
+                                    <div class="main__overlay--item">
+                                        <a href="" title="Thêm vào thư viện">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Phát nhạc">
+                                            <ion-icon name="caret-forward-circle-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Khác">
+                                            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__recently-item--info">
+                                <a href="" title="Góc nhạc Mr Siro">
+                                    <h1>Góc nhạc Mr Siro</h1>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main__recently-item">
+                            <div class="main__recently-item--card">
+                                <a href="" title="Favorite - The 3rd - Album Repackage"><img
+                                        src="media/img/favorite-3rd.webp" alt="">
+                                </a>
+                                <div class="main__overlay" title="Favorite - The 3rd - Album Repackage">
+                                    <div class="main__overlay--item">
+                                        <a href="" title="Thêm vào thư viện">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Phát nhạc">
+                                            <ion-icon name="caret-forward-circle-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Khác">
+                                            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__recently-item--info">
+                                <a href="" title="Favorite - The 3rd - Album Repackage">
+                                    <h1>Favorite - The 3rd - Album Repackage </h1>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main__recently-item">
+                            <div class="main__recently-item--card">
+                                <a href="" title="Sing Along K-Pop"><img src="media/img/sing-along-kpop.webp"
+                                        alt=""></a>
+                                <div class="main__overlay" title="Sing Along K-Pop">
+                                    <div class="main__overlay--item">
+                                        <a href="" title="Thêm vào thư viện">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Phát nhạc">
+                                            <ion-icon name="caret-forward-circle-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Khác">
+                                            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__recently-item--info">
+                                <a href="" title="Sing Along K-Pop">
+                                    <h1>Sing Along K-Pop</h1>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main__recently-item">
+                            <div class="main__recently-item--card">
+                                <a href="" title="Những Bài Hát Hay Nhất Của Vương Anh Tú"> <img
+                                        src="media/img/nhung-bai-hat-hay-cua-vuong-anh-tu.webp" alt=""></a>
+                                <div class="main__overlay" title="Những Bài Hát Hay Nhất Của Vương Anh Tú">
+                                    <div class="main__overlay--item">
+                                        <a href="" title="Thêm vào thư viện">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Phát nhạc">
+                                            <ion-icon name="caret-forward-circle-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Khác">
+                                            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__recently-item--info">
+                                <a href="" title="Những Bài Hát Hay Nhất Của Vương Anh Tú">
+                                    <h1>Những Bài Hát Hay Nhất Của Vương Anh Tú</h1>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="main__recently-item">
+                            <div class="main__recently-item--card">
+                                <a href="" title="Ký Ức V-Pop"><img src="media/img/ky-uc-v-pop.webp" alt=""></a>
+                                <div class="main__overlay" title="Ký Ức V-Pop">
+                                    <div class="main__overlay--item">
+                                        <a href="" title="Thêm vào thư viện">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Phát nhạc">
+                                            <ion-icon name="caret-forward-circle-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Khác">
+                                            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__recently-item--info">
+                                <a href="" title="Ký Ức V-Pop">
+                                    <h1>Ký Ức V-Pop</h1>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Maybe-want -->
+                <div class="main__maybe-want">
+                    <div class="main__maybe-want-title">
+                        <div class="main__maybe-want-title--item">
+                            <h1>Có Thể Bạn Muốn Nghe</h1>
+                        </div>
+                        <div class="main__maybe-want-title--item">
+                            <a href="">
+                                <span>TẤT CẢ</span>
+                                <ion-icon name="chevron-forward-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="main__maybe-want-items">
+                        <div class="main__maybe-want-item">
+                            <div class="main__maybe-want-card">
+                                <a href="" title="K-Pop Solo">
+                                    <img src="media/img/k-pop-solo.webp" alt="">
+                                </a>
+                                <div class="main__overlay" title="K-Pop Solo">
+                                    <div class="main__overlay--item">
+                                        <a href="" title="Thêm vào thư viện">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Phát nhạc">
+                                            <ion-icon name="caret-forward-circle-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Khác">
+                                            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__maybe-want-info">
+                                <div class="main__maybe-want-info--name">
+                                    <a href="" title="K-Pop Solo">
+                                        <h1>K-Pop Solo</h1>
+                                    </a>
+                                </div>
+                                <div class="main__maybe-want-info--author">
+                                    <a href=""><span>JEON</span></a>
+                                    <span>, </span>
+                                    <a href=""><span>LISA</span></a>
+                                    <span>, </span>
+                                    <a href=""><span>TAEEON</span></a>
+                                    <span>...</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main__maybe-want-item">
+                            <div class="main__maybe-want-card">
+                                <a href="" title="Bài Hát V-Pop Nổi Bật 2021">
+                                    <img src="media/img/bai-hat-vpop-noi-bat.webp" alt="">
+                                </a>
+                                <div class="main__overlay" title="Bài Hát V-Pop Nổi Bật 2021">
+                                    <div class="main__overlay--item">
+                                        <a href="" title="Thêm vào thư viện">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Phát nhạc">
+                                            <ion-icon name="caret-forward-circle-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Khác">
+                                            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__maybe-want-info">
+                                <div class="main__maybe-want-info--name">
+                                    <a href="" title="Bài Hát V-Pop Nổi Bật 2021">
+                                        <h1>Bài Hát V-Pop Nổi Bật 2021</h1>
+                                    </a>
+                                </div>
+                                <div class="main__maybe-want-info--author">
+                                    <a href=""><span>MONSTAR</span></a>
+                                    <span>, </span>
+                                    <a href=""><span>AMEE</span></a>
+                                    <span>, </span>
+                                    <a href=""><span>Organe</span></a>
+                                    <span>...</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main__maybe-want-item">
+                            <div class="main__maybe-want-card">
+                                <a href="" title="Hit-Maker: Mr.Siro">
+                                    <img src="media/img/hit-maker-mrsiro.webp" alt="">
+                                </a>
+                                <div class="main__overlay" title="Hit-Maker: Mr.Siro">
+                                    <div class="main__overlay--item">
+                                        <a href="" title="Thêm vào thư viện">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Phát nhạc">
+                                            <ion-icon name="caret-forward-circle-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Khác">
+                                            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__maybe-want-info">
+                                <div class="main__maybe-want-info--name">
+                                    <a href="" title="Hit-Maker: Mr.Siro">
+                                        <h1>Hit-Maker: Mr.Siro</h1>
+                                    </a>
+                                </div>
+                                <div class="main__maybe-want-info--author">
+                                    <a href=""><span>Mr. Siro ★</span></a>
+                                    <span>, </span>
+                                    <a href=""><span>Bảo Anh</span></a>
+                                    <span>, </span>
+                                    <a href=""><span>Hương Tràm</span></a>
+                                    <span>...</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main__maybe-want-item">
+                            <div class="main__maybe-want-card">
+                                <a href="" title="Cà Phê Cùng Bạn Bè">
+                                    <img src="media/img/ca-phe-cung-ban-be.webp" alt="">
+                                </a>
+                                <div class="main__overlay" title="Cà Phê Cùng Bạn Bè">
+                                    <div class="main__overlay--item">
+                                        <a href="" title="Thêm vào thư viện">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Phát nhạc">
+                                            <ion-icon name="caret-forward-circle-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Khác">
+                                            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__maybe-want-info">
+                                <div class="main__maybe-want-info--name">
+                                    <a href="" title="Cà Phê Cùng Bạn Bè">
+                                        <h1>Cà Phê Cùng Bạn Bè</h1>
+                                    </a>
+                                </div>
+                                <div class="main__maybe-want-info--author">
+                                    <a href=""><span>Tăng Phúc</span></a>
+                                    <span>, </span>
+                                    <a href=""><span>Trương Thảo Nhi</span></a>
+                                    <span>, </span>
+                                    <a href=""><span>LyLy</span></a>
+                                    <span>...</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main__maybe-want-item">
+                            <div class="main__maybe-want-card">
+                                <a href="" title="Hit-Maker V-Pop Nổi Bật 2021">
+                                    <img src="media/img/hit-maker-vpop-noi-bat-2021.webp" alt="">
+                                </a>
+                                <div class="main__overlay" title="Hit-Maker V-Pop Nổi Bật 2021">
+                                    <div class="main__overlay--item">
+                                        <a href="" title="Thêm vào thư viện">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Phát nhạc">
+                                            <ion-icon name="caret-forward-circle-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Khác">
+                                            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__maybe-want-info">
+                                <div class="main__maybe-want-info--name">
+                                    <a href="" title="Hit-Maker V-Pop Nổi Bật 2021">
+                                        <h1>Hit-Maker V-Pop Nổi Bật 2021</h1>
+                                    </a>
+                                </div>
+                                <div class="main__maybe-want-info--author">
+                                    <a href=""><span>Hứa Kim Tuyền</span></a>
+                                    <span>, </span>
+                                    <a href=""><span>Vương Anh Tú</span></a>
+                                    <span>, </span>
+                                    <a href=""><span>K-ICM</span></a>
+                                    <span>...</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Today-music -->
+                <div class="main__today-music">
+                    <div class="main__today-music-title">
+                        <div class="main__today-music-title--item">
+                            <h1>Lựa Chọn Hôm Nay</h1>
+                        </div>
+                        <div class="main__today-music-title--item">
+                            <a href="">
+                                <span>TẤT CẢ</span>
+                                <ion-icon name="chevron-forward-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="main__today-music-items">
+                        <div class="main__today-music-item">
+                            <div class="main__today-music-card">
+                                <a href="" title="Giai Điệu V-Pop Tươi Vui">
+                                    <img src="media/img/giai-dieu-tuoi-vui.webp" alt="">
+                                </a>
+                                <div class="main__overlay" title="Giai Điệu V-Pop Tươi Vui">
+                                    <div class="main__overlay--item">
+                                        <a href="" title="Thêm vào thư viện">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Phát nhạc">
+                                            <ion-icon name="caret-forward-circle-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Khác">
+                                            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__today-music-info">
+                                <div class="main__today-music-info--name">
+                                    <a href="" title="Giai Điệu V-Pop Tươi Vui">
+                                        <h1>Giai Điệu V-Pop Tươi Vui</h1>
+                                    </a>
+                                </div>
+                                <div class="main__today-music-info--author">
+                                   <span title="Tận hưởng 'Happy Day' với giai điệu V-Pop nghe là thấy vui">Tận hưởng 'Happy Day' với giai điệu V-Pop nghe là thấy vui
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main__today-music-item">
+                            <div class="main__today-music-card">
+                                <a href="" title="Hip-Hop Now">
+                                    <img src="media/img/hip-hop-now.webp" alt="">
+                                </a>
+                                <div class="main__overlay" title="Hip-Hop Now">
+                                    <div class="main__overlay--item">
+                                        <a href="" title="Thêm vào thư viện">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Phát nhạc">
+                                            <ion-icon name="caret-forward-circle-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Khác">
+                                            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__today-music-info">
+                                <div class="main__today-music-info--name">
+                                    <a href="" title="Hip-Hop Now">
+                                        <h1>Hip-Hop Now</h1>
+                                    </a>
+                                </div>
+                                <div class="main__today-music-info--author">
+                                    <span title="Bắt nhịp flow cùng những ca khúc Hip-Hop Âu Mỹ mới nhất">Bắt nhịp flow cùng những ca khúc Hip-Hop Âu Mỹ mới nhất</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main__today-music-item">
+                            <div class="main__today-music-card">
+                                <a href="" title="Tản Mạn Cùng Indie Việt">
+                                    <img src="media/img/tan-man-cung-indie-viet.webp" alt="">
+                                </a>
+                                <div class="main__overlay" title="Tản Mạn Cùng Indie Việt">
+                                    <div class="main__overlay--item">
+                                        <a href="" title="Thêm vào thư viện">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Phát nhạc">
+                                            <ion-icon name="caret-forward-circle-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Khác">
+                                            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__today-music-info">
+                                <div class="main__today-music-info--name">
+                                    <a href="" title="Tản Mạn Cùng Indie Việt">
+                                        <h1>Tản Mạn Cùng Indie Việt</h1>
+                                    </a>
+                                </div>
+                                <div class="main__today-music-info--author">
+                                   <span title="Khám phá những gương mặt Việt đáng chú ý của Indie Việt">Khám phá những gương mặt Việt đáng chú ý của Indie Việt</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main__today-music-item">
+                            <div class="main__today-music-card">
+                                <a href="" title="Disco V">
+                                    <img src="media/img/disco-viet.webp" alt="">
+                                </a>
+                                <div class="main__overlay" title="Disco V">
+                                    <div class="main__overlay--item">
+                                        <a href="" title="Thêm vào thư viện">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Phát nhạc">
+                                            <ion-icon name="caret-forward-circle-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Khác">
+                                            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__today-music-info">
+                                <div class="main__today-music-info--name">
+                                    <a href="" title="Disco V">
+                                        <h1>Disco V</h1>
+                                    </a>
+                                </div>
+                                <div class="main__today-music-info--author">
+                                    <span title="Âm hưởng Disco trở thành trào lưu của V-Pop ngày nay">Âm hưởng Disco trở thành trào lưu của V-Pop ngày nay</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main__today-music-item">
+                            <div class="main__today-music-card">
+                                <a href="" title="Pop Rising">
+                                    <img src="media/img/pop-rising-usuk.webp" alt="">
+                                </a>
+                                <div class="main__overlay" title="Pop Rising">
+                                    <div class="main__overlay--item">
+                                        <a href="" title="Thêm vào thư viện">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Phát nhạc">
+                                            <ion-icon name="caret-forward-circle-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Khác">
+                                            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__today-music-info">
+                                <div class="main__today-music-info--name">
+                                    <a href="" title="Pop Rising">
+                                        <h1>Pop Rising</h1>
+                                    </a>
+                                </div>
+                                <div class="main__today-music-info--author">
+                                    <span title="Gen Z tiềm năng của Âu Mỹ">Gen Z tiềm năng của Âu Mỹ</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- XONE's Corner -->
+                <div class="main__xone">
+                    <div class="main__xone-title">
+                        <div class="main__xone-title--item">
+                            <h1>XONE's CORNER</h1>
+                        </div>
+                        <div class="main__xone-title--item">
+                            <a href="">
+                                <span>TẤT CẢ</span>
+                                <ion-icon name="chevron-forward-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="main__xone-items">
+                        <div class="main__xone-item">
+                            <div class="main__xone-card">
+                                <a href="" title="USUK Something New">
+                                    <img src="media/img/usuk-something-new.webp" alt="">
+                                </a>
+                                <div class="main__overlay" title="USUK Something New">
+                                    <div class="main__overlay--item">
+                                        <a href="" title="Thêm vào thư viện">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Phát nhạc">
+                                            <ion-icon name="caret-forward-circle-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Khác">
+                                            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__xone-info">
+                                <div class="main__xone-info--name">
+                                    <a href="" title="USUK Something New">
+                                        <h1>USUK Something New</h1>
+                                    </a>
+                                </div>
+                                <div class="main__xone-info--author">
+                                   <span title="Thưởng thức các bài hát mới USUK">Thưởng thức các bài hát mới USUK
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main__xone-item">
+                            <div class="main__xone-card">
+                                <a href="" title="V-Pop Cuối Tuần">
+                                    <img src="media/img/vpop-cuoi-tuan.webp" alt="">
+                                </a>
+                                <div class="main__overlay" title="V-Pop Cuối Tuần">
+                                    <div class="main__overlay--item">
+                                        <a href="" title="Thêm vào thư viện">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Phát nhạc">
+                                            <ion-icon name="caret-forward-circle-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Khác">
+                                            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__xone-info">
+                                <div class="main__xone-info--name">
+                                    <a href="" title="V-Pop Cuối Tuần">
+                                        <h1>V-Pop Cuối Tuần</h1>
+                                    </a>
+                                </div>
+                                <div class="main__xone-info--author">
+                                    <span title="V-Pop thế hệ Gen Z cực chất, bạn đừng nên bỏ lỡ nhé">V-Pop thế hệ Gen Z cực chất, bạn đừng nên bỏ lỡ nhé</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main__xone-item">
+                            <div class="main__xone-card">
+                                <a href="" title="K-Pop Viral">
+                                    <img src="media/img/kpop-viral.webp" alt="">
+                                </a>
+                                <div class="main__overlay" title="Tản Mạn Cùng Indie Việt">
+                                    <div class="main__overlay--item">
+                                        <a href="" title="Thêm vào thư viện">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Phát nhạc">
+                                            <ion-icon name="caret-forward-circle-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Khác">
+                                            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__xone-info">
+                                <div class="main__xone-info--name">
+                                    <a href="" title="K-Pop Viral">
+                                        <h1>K-Pop Viral</h1>
+                                    </a>
+                                </div>
+                                <div class="main__xone-info--author">
+                                    <span title="Lan truyền âm nhạc cực chất của những ban nhạc xứ Hàn">Lan truyền âm nhạc cực chất của những ban nhạc xứ Hàn</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main__xone-item">
+                            <div class="main__today-music-card">
+                                <a href="" title="Beach Vibe">
+                                    <img src="media/img/beach-vibe.webp" alt="">
+                                </a>
+                                <div class="main__overlay" title="Beach Vibe">
+                                    <div class="main__overlay--item">
+                                        <a href="" title="Thêm vào thư viện">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Phát nhạc">
+                                            <ion-icon name="caret-forward-circle-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Khác">
+                                            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__xone-info">
+                                <div class="main__today-music-info--name">
+                                    <a href="" title="Beach Vibe">
+                                        <h1>Beach Vibe</h1>
+                                    </a>
+                                </div>
+                                <div class="main__xone-info--author">
+                                    <span title="Playlist mang 'gió biển' thổi mát nóng nực ngày cuối tuần">Playlist mang "gió biển" thổi mát nóng nực ngày cuối tuần</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main__xone-item">
+                            <div class="main__xone-card">
+                                <a href="" title="Tiệc Tùng">
+                                    <img src="media/img/tiec-tung.webp" alt="">
+                                </a>
+                                <div class="main__overlay" title="Tiệc Tùng">
+                                    <div class="main__overlay--item">
+                                        <a href="" title="Thêm vào thư viện">
+                                            <ion-icon name="heart-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Phát nhạc">
+                                            <ion-icon name="caret-forward-circle-outline"></ion-icon>
+                                        </a>
+                                        <a href="" title="Khác">
+                                            <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main__xone-info">
+                                <div class="main__xone-info--name">
+                                    <a href="" title="Tiệc Tùng">
+                                        <h1>Tiệc Tùng</h1>
+                                    </a>
+                                </div>
+                                <div class="main__xone-info--author">
+                                   <span title="Tiệc tùng tại nhà, có nhạc XONE để 'quẫy', tại sao không?">Tiệc tùng tại nhà, có nhạc XONE để "quẫy", tại sao không?</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Radio Highlight -->
+                <div class="main__radio">
+                    <div class="main__radio-title">
+                        <div class="main__radio-title--item">
+                            <h1>Radio Nổi Bật</h1>
+                        </div>
+                        <div class="main__radio-title--item">
+                            <a href="">
+                                <span>TẤT CẢ</span>
+                                <ion-icon name="chevron-forward-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="main__radio-items">
+                        <div class="main__radio-item">
+                            <div class="main__radio--ava-popup">
+                                <div class="main__radio-card">
+                                    <a href="">
+                                        <img src="media/img/xe-xone.webp" alt="">
+                                    </a>
+                                    <div class="main__overlay" >
+                                        <div class="main__overlay--item">
+                                            <a href="" title="Phát nhạc">
+                                                <ion-icon name="caret-forward-circle-outline"></ion-icon>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__radio-card--brand">
+                                    <img src="media/img/ava-xone.webp" alt="">
+                                </div>
+                                <div class="main__radio-card--live">
+                                    <span>LIVE</span>
+                                </div>
+                            </div>
+                            
+                            <div class="main__radio-info">
+                                <div class="main__radio-info--name">
+                                        <h1>XONE Radio</h1>
+                                </div>
+                                <div class="main__radio-info--author">
+                                   <span>614 đang nghe
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="main__radio-item">
+                            <div class="main__radio--ava-popup">
+                                <div class="main__radio-card">
+                                    <a href="">
+                                        <img src="media/img/G-dragon.webp" alt="">
+                                    </a>
+                                    <div class="main__overlay" >
+                                        <div class="main__overlay--item">
+                                            <a href="" title="Phát nhạc">
+                                                <ion-icon name="caret-forward-circle-outline"></ion-icon>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__radio-card--brand">
+                                    <img src="media/img/ava-gdragon.webp" alt="">
+                                </div>
+                                <div class="main__radio-card--live">
+                                    <span>LIVE</span>
+                                </div>
+                            </div>
+                            
+                            <div class="main__radio-info">
+                                <div class="main__radio-info--name">
+                                        <h1>G-Dragon</h1>
+                                </div>
+                                <div class="main__radio-info--author">
+                                   <span>213 đang nghe
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main__radio-item">
+                            <div class="main__radio--ava-popup">
+                                <div class="main__radio-card">
+                                    <a href="">
+                                        <img src="media/img/radio-vpop.webp" alt="">
+                                    </a>
+                                    <div class="main__overlay" >
+                                        <div class="main__overlay--item">
+                                            <a href="" title="Phát nhạc">
+                                                <ion-icon name="caret-forward-circle-outline"></ion-icon>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__radio-card--brand">
+                                    <img src="media/img/ava-radio-vpop.webp" alt="">
+                                </div>
+                                <div class="main__radio-card--live">
+                                    <span>LIVE</span>
+                                </div>
+                            </div>
+                            
+                            <div class="main__radio-info">
+                                <div class="main__radio-info--name">
+                                        <h1>V-POP</h1>
+                                </div>
+                                <div class="main__radio-info--author">
+                                   <span>759 đang nghe
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main__radio-item">
+                            <div class="main__radio--ava-popup">
+                                <div class="main__radio-card">
+                                    <a href="">
+                                        <img src="media/img/radio-on-air.webp" alt="">
+                                    </a>
+                                    <div class="main__overlay" >
+                                        <div class="main__overlay--item">
+                                            <a href="" title="Phát nhạc">
+                                                <ion-icon name="caret-forward-circle-outline"></ion-icon>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__radio-card--brand">
+                                    <img src="media/img/ava-radio-on-air.webp" alt="">
+                                </div>
+                                <div class="main__radio-card--live">
+                                    <span>LIVE</span>
+                                </div>
+                            </div>
+                            
+                            <div class="main__radio-info">
+                                <div class="main__radio-info--name">
+                                        <h1>On Air</h1>
+                                </div>
+                                <div class="main__radio-info--author">
+                                   <span>158 đang nghe
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main__radio-item">
+                            <div class="main__radio--ava-popup">
+                                <div class="main__radio-card">
+                                    <a href="">
+                                        <img src="media/img/radio-bolero.webp" alt="">
+                                    </a>
+                                    <div class="main__overlay" >
+                                        <div class="main__overlay--item">
+                                            <a href="" title="Phát nhạc">
+                                                <ion-icon name="caret-forward-circle-outline"></ion-icon>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__radio-card--brand">
+                                    <img src="media/img/ava-radio-bolero.webp" alt="">
+                                </div>
+                                <div class="main__radio-card--live">
+                                    <span>LIVE</span>
+                                </div>
+                            </div>
+                            
+                            <div class="main__radio-info">
+                                <div class="main__radio-info--name">
+                                        <h1>Bolero</h1>
+                                </div>
+                                <div class="main__radio-info--author">
+                                   <span>789 đang nghe
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main__radio-item">
+                            <div class="main__radio--ava-popup">
+                                <div class="main__radio-card">
+                                    <a href="">
+                                        <img src="media/img/radio-cham.webp" alt="">
+                                    </a>
+                                    <div class="main__overlay" >
+                                        <div class="main__overlay--item">
+                                            <a href="" title="Phát nhạc">
+                                                <ion-icon name="caret-forward-circle-outline"></ion-icon>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__radio-card--brand">
+                                    <img src="media/img/ava-radio-cham.webp" alt="">
+                                </div>
+                                <div class="main__radio-card--live">
+                                    <span>LIVE</span>
+                                </div>
+                            </div>
+                            
+                            <div class="main__radio-info">
+                                <div class="main__radio-info--name">
+                                        <h1>Chạm</h1>
+                                </div>
+                                <div class="main__radio-info--author">
+                                   <span>359 đang nghe
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main__radio-item">
+                            <div class="main__radio--ava-popup">
+                                <div class="main__radio-card">
+                                    <a href="">
+                                        <img src="media/img/radio-usuk.webp" alt="">
+                                    </a>
+                                    <div class="main__overlay" >
+                                        <div class="main__overlay--item">
+                                            <a href="" title="Phát nhạc">
+                                                <ion-icon name="caret-forward-circle-outline"></ion-icon>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__radio-card--brand">
+                                    <img src="media/img/ava-radio-usuk.webp" alt="">
+                                </div>
+                                <div class="main__radio-card--live">
+                                    <span>LIVE</span>
+                                </div>
+                            </div>
+                            
+                            <div class="main__radio-info">
+                                <div class="main__radio-info--name">
+                                        <h1>US-UK</h1>
+                                </div>
+                                <div class="main__radio-info--author">
+                                   <span>209 đang nghe
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Rank Music -->
+                <div class="main__rank">
+                    <div class="main__rank-items">
+                        <div class="main__rank-item">
+                            <div class="main__rank-card">
+                                <a href="">
+                                    <img src="media/img/rank-vietnam.jpg" alt="">
+                                </a>
+                                <div class="main__overlay">
+                                    <a href=""></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main__rank-item">
+                            <div class="main__rank-card">
+                                <a href="">
+                                    <img src="media/img/rank-usuk.jpg" alt="">
+                                </a>
+                                <div class="main__overlay">
+                                    <a href=""></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="main__rank-item">
+                            <div class="main__rank-card">
+                                <a href="">
+                                    <img src="media/img/rank-k-pop.jpg" alt="">
+                                </a>
+                                <div class="main__overlay">
+                                    <a href=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MV HOT -->
+                <div class="main__mv">
+                    <div class="main__mv-title">
+                        <div class="main__mv-title--item">
+                            <h1>MV HOT</h1>
+                        </div>
+                        <div class="main__mv-title--item">
+                            <a href="">
+                                <span>TẤT CẢ</span>
+                                <ion-icon name="chevron-forward-outline"></ion-icon>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="main__mv-items">
+                        <div class="main__mv-item">
+                            <iframe src="https://www.youtube.com/embed/1YuOQnZm1no" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="main__mv-item">
+                            <iframe src="https://www.youtube.com/embed/gJHSDZfJrRY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+
+                        <div class="main__mv-item">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/7CymvjGuY5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event -->
+                <div class="main__event">
+                    
+                </div>
+            </main>
+
+
         </div>
     </div>
 

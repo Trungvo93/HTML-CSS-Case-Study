@@ -1,10 +1,26 @@
 $bg-color: #1abc9c;
 $bg-opacity: rgba(#000000, 0.2);
+$opacity: rgba(#000000, 0.3);
+$bg-color-main: #e8e5e5;
+$bg-img: url(../media/img/hinh-o-vuong.png);
 $font-a-default: black;
 $font-a-header: black;
 $font-title: white;
 $font-color-blue: #1abc9c;
 $font-color-ograne: #ee7c39;
+
+@mixin text-overflow-ellipsis-1{
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+}
+@mixin text-overflow-ellipsis-2{
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+}
 
 :root {
     --header-height: 70px;
@@ -27,6 +43,10 @@ $font-color-ograne: #ee7c39;
     ion-icon {
         pointer-events: none;
     }
+}
+body{
+    background-color: $bg-color-main;
+    background-image: $bg-img;
 }
 
 .title {
@@ -194,11 +214,12 @@ aside {
     width: 100%;
     position: fixed;
     left: 0px;
-    height: calc(100vh - 70px);
+    height: 100vh;
     flex-direction: column;
     background-color: $bg-color;
     padding: 0px !important;
     background-image: url(../media/img/hinh-o-vuong.png);
+
     hr {
         margin: 10px;
     }
@@ -232,6 +253,13 @@ aside {
             padding-right: 5px;
         }
 
+        i {
+            vertical-align: middle;
+            text-align: center;
+            font-size: x-large;
+            padding-right: 5px;
+        }
+
         span {
             vertical-align: middle;
             font-weight: 500;
@@ -259,35 +287,35 @@ aside {
     color: white;
 }
 
-.aside__scroll{
+.aside__scroll {
     overflow-y: scroll;
 }
 
-.aside__scroll::-webkit-scrollbar
-{
-	width: 5px;
+.aside__scroll::-webkit-scrollbar {
+    width: 5px;
     background-image: url(../media/img/hinh-o-vuong.png);
-	background-color: $bg-color;
+    background-color: $bg-color;
 }
 
-.aside__scroll::-webkit-scrollbar-thumb
-{
-	border-radius: 15px;
-	-webkit-box-shadow:0 0 3px rgba(0,0,0,1);
-	background-color: $font-color-ograne;
+.aside__scroll::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 1);
+    background-color: $font-color-ograne;
 }
 
-.aside__upgrade-vip{
+.aside__upgrade-vip {
     padding: 10px;
     margin: 20px;
     text-align: center;
-    background:linear-gradient(to right,rgb(21, 21, 21,0.7),rgb(7, 52, 188,0.8));
+    background: linear-gradient(to right, rgb(21, 21, 21, 0.7), rgb(7, 52, 188, 0.8));
     border-radius: 10px;
-    p{
+
+    p {
         color: white;
         font-size: smaller;
     }
-    button{
+
+    button {
         width: 90%;
         padding: 5px;
         border-radius: 20px;
@@ -295,5 +323,692 @@ aside {
         background-color: yellow;
         font-weight: 600;
         font-size: smaller;
+    }
+}
+
+.aside__menu {
+    h1 {
+        padding: 0 20px;
+        font-size: x-large;
+    }
+}
+
+.aside__create-playlist {
+    padding: 10px 20px;
+
+    h1 {
+        display: inline-block;
+        font-size: small;
+        font-weight: 700;
+    }
+
+    ion-icon {
+
+        vertical-align: middle;
+        text-align: center;
+        font-size: x-large;
+        padding-right: 5px;
+    }
+
+    a:hover {
+        color: $font-color-ograne;
+    }
+}
+
+.aside__create-playlist:hover {
+    background-color: $bg-opacity;
+}
+
+//MAIN
+main {
+    position: absolute;
+    top: var(--header-height);
+    right: 0;
+    padding: 0 20px !important;
+    height: 100vmax;
+    display: flex;
+    flex-direction: column;
+}
+.main__overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $opacity;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__overlay--item {
+    a {
+        color: white;
+        font-size: large;
+        padding: 10px;
+        vertical-align: middle;
+    }
+
+    a:nth-child(2) {
+        font-size: xx-large;
+    }
+}
+
+.banner {
+    padding: 30px 0;
+
+    .carousel-inner {
+        border-radius: 10px;
+    }
+}
+
+.main__slide-banner {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    gap: 20px;
+}
+
+.main__slide-banner--item {
+    flex: 30%;
+
+    img {
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+
+//Recently
+.main__recently {
+    padding:20px 0;
+}
+
+.main__recently-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__recently-title--item {
+    h1 {
+        font-size: large;
+        font-weight: bold;
+        vertical-align: middle;
+    }
+
+    span {
+        vertical-align: middle;
+        font-size: small;
+    }
+
+    ion-icon {
+        vertical-align: middle;
+    }
+
+    a:hover {
+        color: $font-color-ograne;
+    }
+}
+
+.main__recently-items {
+    display: flex;
+    gap: 20px;
+}
+
+.main__recently-item {
+    flex: 16%;
+    display: flex;
+    flex-direction: column;
+    // background-color: #ee7c39;
+    padding: 10px 0px;
+
+}
+
+.main__recently-item--card {
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+
+    img {
+        border-radius: 5px;
+        width: 100%;
+        object-fit: cover;
+        transition: transform 1s;
+    }
+}
+
+
+
+.main__recently-item--card:hover {
+    .main__overlay {
+        z-index: 1;
+    }
+
+    img {
+        transform: scale(1.2);
+    }
+
+}
+
+.main__recently-item--info {
+    padding-top: 10px;
+
+    h1 {
+        font-size: medium;
+        @include text-overflow-ellipsis-1();
+    }
+
+    a:hover {
+        color: $font-color-ograne;
+    }
+}
+
+
+
+// Maybe-want
+.main__maybe-want {
+    padding: 20px 0px;
+}
+
+.main__maybe-want-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__maybe-want-title--item {
+    h1 {
+        font-size: large;
+        font-weight: 900;
+    }
+
+    span {
+        font-size: small;
+        vertical-align: middle;
+    }
+
+    ion-icon {
+        vertical-align: middle;
+    }
+
+    a:hover {
+        color: $font-color-ograne;
+    }
+}
+
+.main__maybe-want-items {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.main__maybe-want-item {
+    flex: 20%;
+    flex-grow: 0;
+    padding: 20px 0;
+}
+
+.main__maybe-want-card {
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+    img {
+        width: 100%;
+        object-fit: cover;
+        transition: transform 1s;
+    }
+    
+    
+}
+
+.main__maybe-want-card:hover{
+    .main__overlay {
+        z-index: 1;
+    }
+
+    img {
+        transform: scale(1.2);
+
+    }
+}
+.main__maybe-want-info {
+    padding: 10px 0px;
+
+    a:hover {
+        color: $font-color-ograne;
+    }
+}
+
+.main__maybe-want-info--name {
+
+    h1 {
+        font-size: medium;
+        @include text-overflow-ellipsis-1();
+    }
+}
+
+.main__maybe-want-info--author {
+    span {
+        font-size: smaller;
+        color: grey;
+    }
+
+    span:hover {
+        color: $font-color-ograne;
+    }
+}
+
+
+// Today-music
+.main__today-music {
+    padding: 20px 0px;
+}
+
+.main__today-music-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__today-music-title--item {
+    h1 {
+        font-size: large;
+        font-weight: 900;
+    }
+
+    span {
+        font-size: small;
+        vertical-align: middle;
+    }
+
+    ion-icon {
+        vertical-align: middle;
+    }
+
+    a:hover {
+        color: $font-color-ograne;
+    }
+}
+
+.main__today-music-items {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.main__today-music-item {
+    flex: 20%;
+    flex-grow: 0;
+    padding: 20px 0;
+}
+
+.main__today-music-card {
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+    img {
+        width: 100%;
+        object-fit: cover;
+        transition: transform 1s;
+    }
+    
+    
+}
+
+.main__today-music-card:hover{
+    .main__overlay {
+        z-index: 1;
+    }
+
+    img {
+        transform: scale(1.2);
+
+    }
+}
+.main__today-music-info {
+    padding: 10px 0px;
+
+    a:hover {
+        color: $font-color-ograne;
+    }
+}
+
+.main__today-music-info--name {
+
+    h1 {
+        font-size: medium;
+        @include text-overflow-ellipsis-1();
+    }
+}
+
+.main__today-music-info--author {
+    span {
+        font-size: small;
+        color: grey;
+        @include text-overflow-ellipsis-2();
+    }
+}
+
+
+// XONE's CORNER
+.main__xone {
+    padding: 20px 0px;
+}
+
+.main__xone-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__xone-title--item {
+    h1 {
+        font-size: large;
+        font-weight: 900;
+    }
+
+    span {
+        font-size: small;
+        vertical-align: middle;
+    }
+
+    ion-icon {
+        vertical-align: middle;
+    }
+
+    a:hover {
+        color: $font-color-ograne;
+    }
+}
+
+.main__xone-items {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.main__xone-item {
+    flex: 20%;
+    flex-grow: 0;
+    padding: 20px 0;
+}
+
+.main__xone-card {
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+    img {
+        width: 100%;
+        object-fit: cover;
+        transition: transform 1s;
+    }
+    
+    
+}
+
+.main__xone-card:hover{
+    .main__overlay {
+        z-index: 1;
+    }
+
+    img {
+        transform: scale(1.2);
+
+    }
+}
+.main__xone-info {
+    padding: 10px 0px;
+
+    a:hover {
+        color: $font-color-ograne;
+    }
+}
+
+.main__xone-info--name {
+
+    h1 {
+        font-size: medium;
+        @include text-overflow-ellipsis-1();
+    }
+}
+
+.main__xone-info--author {
+    span {
+        font-size: small;
+        color: grey;
+        @include text-overflow-ellipsis-2();
+    }
+}
+
+
+// Radio Highlight
+.main__radio {
+    padding: 20px 0px;
+}
+
+.main__radio-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__radio-title--item {
+    h1 {
+        font-size: large;
+        font-weight: 900;
+    }
+
+    span {
+        font-size: small;
+        vertical-align: middle;
+    }
+
+    ion-icon {
+        vertical-align: middle;
+    }
+
+    a:hover {
+        color: $font-color-ograne;
+    }
+}
+
+.main__radio-items {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+}
+
+.main__radio-item {
+    flex: 14%;
+    flex-grow: 0;
+    padding: 20px 0;
+}
+.main__radio--ava-popup{
+    position: relative;
+}
+.main__radio-card {
+    overflow: hidden;
+    border-radius: 50%;
+    position: relative;
+    border:5px solid rgba(black,0.2);
+    img {
+        width: 100%;
+        object-fit: cover;
+        transition: transform 1s;
+    }
+    .main__overlay--item{
+        ion-icon {
+            font-size: 4vmax;
+        }
+    }
+    
+}
+.main__radio-card--brand{
+    position:absolute;
+    right: 0;
+    bottom: 5%;
+    width: 30%;
+    height: 30%;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid black;
+    img{
+        
+        width: 100%;
+        object-fit: cover;
+    }
+    z-index: 2;
+}
+.main__radio-card--live{
+    position:absolute;
+    bottom: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    border-radius: 5px;
+    background-color: red;
+    padding: 0px 10px;
+    z-index: 2;
+    span{
+        font-size: xx-small;
+        color: white;
+        vertical-align: middle;
+        font-weight: 700;
+    }
+}
+
+.main__radio-card:hover{
+    .main__overlay {
+        z-index: 1;
+    }
+
+    img {
+        transform: scale(1.2);
+
+    }
+}
+.main__radio-info {
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.main__radio-info--name {
+    padding-top: 10px;
+    h1 {
+        font-size: medium;
+        font-weight: 600;
+        @include text-overflow-ellipsis-1();
+    }
+}
+
+.main__radio-info--author {
+    span {
+        font-size: small;
+        color: grey;
+        @include text-overflow-ellipsis-2();
+    }
+}
+
+
+// Rank Music
+
+.main__rank {
+    padding: 20px 0px;
+}
+
+
+.main__rank-items {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.main__rank-item {
+    flex: 33%;
+    flex-grow: 0;
+    padding: 20px 0;
+}
+
+.main__rank-card {
+    overflow: hidden;
+    border-radius: 5px;
+    position: relative;
+    img {
+        width: 100%;
+        object-fit: cover;
+        transition: transform 1s;
+    }
+    
+    
+}
+
+.main__rank-card:hover{
+    .main__overlay {
+        background: rgba(black,0);
+        z-index: 1;
+        a{
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    img {
+        transform: scale(1.1);
+
+    }
+}
+
+
+//MV HOT
+.main_mv{
+    padding: 20px 0px;
+}
+
+.main__mv-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main__mv-title--item {
+    h1 {
+        font-size: large;
+        font-weight: 900;
+    }
+
+    span {
+        font-size: small;
+        vertical-align: middle;
+    }
+
+    ion-icon {
+        vertical-align: middle;
+    }
+
+    a:hover {
+        color: $font-color-ograne;
+    }
+}
+
+.main__mv-items{
+    display: flex;
+    gap: 40px;
+    padding: 20px 0;
+    
+}
+
+.main__mv-item{
+    flex: 33%;
+    position: relative;
+    flex-grow: 0;
+    padding-bottom:17%;
+	overflow:hidden;
+    iframe{
+        position:absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
     }
 }
