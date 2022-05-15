@@ -87,7 +87,7 @@ header {
         color: $font-color-ograne;
     }
 
-    z-index: 2;
+    z-index: 10;
 
 
 }
@@ -1548,11 +1548,13 @@ footer {
 
             h3 {
                 font-size: 1.2rem;
+                @include text-overflow-ellipsis-1();
             }
 
             p {
                 font-size: 0.8rem;
                 padding: 0px;
+                @include text-overflow-ellipsis-1();
             }
 
             a {
@@ -1601,4 +1603,98 @@ footer {
 
     }
 
+}
+
+
+//Reposive
+
+@media only screen and (max-width:991px){
+
+    //ASIDE
+    .aside__logo{
+        img{
+            width: 30px;
+            height: auto;
+        }
+        padding: 10px 0;
+        margin: auto;
+    }
+    .aside__menu--item{
+        
+        span{
+            display: none;
+        }
+        li{
+            padding: 10px 0px;
+        }
+        text-align: center;
+    }
+
+    .aside__upgrade-vip{
+        display: none;
+    }
+    .aside__menu{
+        text-align: center;
+        h1{
+            font-size: 1.5vmax;
+            font-weight: bold;
+            padding: 0px;
+            padding-top: 20px;
+            
+        }
+    }
+    .aside__create-playlist{
+        padding: 0;
+        text-align: center;
+        h1{
+            font-size: 1.5vmax;
+            font-weight: bold;
+            padding: 0px;
+            padding-top: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width:767px){
+
+    //RECENTLY
+    .main__recently-items {
+        padding-top: 20px;
+        flex-wrap: wrap;
+    }
+    
+    .main__recently-item {
+        flex: 30%;
+        padding: 10px 15px;
+    }
+    .main__recently-item:first-child, .main__recently-item:nth-of-type(4){
+        margin-left: -20px;
+    }
+    .main__recently-item:last-child, .main__recently-item:nth-of-type(3){
+        margin-right: -20px;
+    }
+
+
+    // Maybe-want
+    
+
+    .main__maybe-want-items {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .main__maybe-want-item {
+        flex: 30%;
+        flex-grow: 0;
+        padding: 20px 20px;
+    }
+    .main__maybe-want-item:first-child, .main__maybe-want-item:nth-of-type(4){
+        margin-left: -20px;
+    }
+    .main__maybe-want-item:last-child, .main__maybe-want-item:nth-of-type(3){
+        margin-right: -20px;
+    }
+    
 }

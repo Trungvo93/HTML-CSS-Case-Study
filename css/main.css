@@ -44,7 +44,7 @@ header {
   align-items: center;
   justify-content: center;
   background-color: #1abc9c;
-  z-index: 2;
+  z-index: 10;
 }
 header a {
   vertical-align: middle;
@@ -1311,10 +1311,18 @@ footer .music-player-name .music-player-name__info {
 }
 footer .music-player-name .music-player-name__info h3 {
   font-size: 1.2rem;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
 }
 footer .music-player-name .music-player-name__info p {
   font-size: 0.8rem;
   padding: 0px;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  display: -webkit-box;
 }
 footer .music-player-name .music-player-name__info a {
   text-decoration: none;
@@ -1350,6 +1358,92 @@ footer .music-player-list .music-player-list__show-list {
   padding: 0.5rem;
   border-radius: 5px;
   color: white;
+}
+
+@media only screen and (max-width: 991px) {
+  .aside__logo {
+    padding: 10px 0;
+    margin: auto;
+  }
+  .aside__logo img {
+    width: 30px;
+    height: auto;
+  }
+
+  .aside__menu--item {
+    text-align: center;
+  }
+  .aside__menu--item span {
+    display: none;
+  }
+  .aside__menu--item li {
+    padding: 10px 0px;
+  }
+
+  .aside__upgrade-vip {
+    display: none;
+  }
+
+  .aside__menu {
+    text-align: center;
+  }
+  .aside__menu h1 {
+    font-size: 1.5vmax;
+    font-weight: bold;
+    padding: 0px;
+    padding-top: 20px;
+  }
+
+  .aside__create-playlist {
+    padding: 0;
+    text-align: center;
+  }
+  .aside__create-playlist h1 {
+    font-size: 1.5vmax;
+    font-weight: bold;
+    padding: 0px;
+    padding-top: 10px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .main__recently-items {
+    padding-top: 20px;
+    flex-wrap: wrap;
+  }
+
+  .main__recently-item {
+    flex: 30%;
+    padding: 10px 15px;
+  }
+
+  .main__recently-item:first-child, .main__recently-item:nth-of-type(4) {
+    margin-left: -20px;
+  }
+
+  .main__recently-item:last-child, .main__recently-item:nth-of-type(3) {
+    margin-right: -20px;
+  }
+
+  .main__maybe-want-items {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .main__maybe-want-item {
+    flex: 30%;
+    flex-grow: 0;
+    padding: 20px 20px;
+  }
+
+  .main__maybe-want-item:first-child, .main__maybe-want-item:nth-of-type(4) {
+    margin-left: -20px;
+  }
+
+  .main__maybe-want-item:last-child, .main__maybe-want-item:nth-of-type(3) {
+    margin-right: -20px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
