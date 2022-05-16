@@ -235,6 +235,7 @@ aside {
         display: block;
         object-fit: cover;
     }
+    // margin: 0px auto;
 }
 
 .aside__menu--item {
@@ -284,7 +285,7 @@ aside {
     padding: 5px 10px;
     margin-left: 5px;
     border-radius: 5px;
-    font-size: 10px !important;
+    font-size:1vmin !important;
     font-weight: bold !important;
     color: white;
 }
@@ -1543,6 +1544,7 @@ footer {
 
         .music-player-name__info {
             padding-left: 10px;
+            padding-right: 10px;
             height: 50px;
             width: 100%;
 
@@ -1577,6 +1579,7 @@ footer {
         flex: 25%;
         text-align: end;
         padding-right: 1rem;
+        padding-left: 10px;
 
         a {
             text-decoration: none;
@@ -1590,10 +1593,12 @@ footer {
         .music-player-list__combie--show {
             display: none;
         }
-
+        .music-player-list__combie{
+            // font-size: 10px;
+        }
         .music-player-list__show-list {
             text-decoration: none;
-            font-size: 0.8rem;
+            // font-size: 0.8rem;
             background-color: $bg-color;
             padding: 0.5rem;
             border-radius: 5px;
@@ -1617,7 +1622,7 @@ footer {
             height: auto;
         }
         padding: 10px 0;
-        margin: auto;
+        margin:0px auto;
     }
     .aside__menu--item{
         
@@ -1653,7 +1658,18 @@ footer {
             padding-top: 10px;
         }
     }
+
+    footer{
+        .music-player-list {
+            .music-player-list__show-list{
+                padding-right: 16px;
+            }
+        }
+        
+    }
 }
+
+
 
 @media only screen and (max-width:767px){
 
@@ -1697,4 +1713,33 @@ footer {
         margin-right: -20px;
     }
     
+
+    //FOOTER
+    footer{
+        .music-player-list {
+            a {
+                text-decoration: none;
+                font-size: 5px;
+                padding: 0.3rem;
+                padding-right: 1rem;
+                border-radius: 5px;
+                color: white;
+            }
+            .music-player-list__combie{
+                font-size: 15px;
+            }
+            .music-player-list__show-list{
+                font-size: 15px;
+                padding-right: 16px;
+            }
+        }
+        
+    }
+}
+
+@media only screen and (max-width:575px){
+    aside{
+        display: none;
+        position:static;
+    }
 }

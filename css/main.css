@@ -221,7 +221,7 @@ aside hr {
   padding: 5px 10px;
   margin-left: 5px;
   border-radius: 5px;
-  font-size: 10px !important;
+  font-size: 1vmin !important;
   font-weight: bold !important;
   color: white;
 }
@@ -1306,6 +1306,7 @@ footer .music-player-name .music-player-name__img img {
 }
 footer .music-player-name .music-player-name__info {
   padding-left: 10px;
+  padding-right: 10px;
   height: 50px;
   width: 100%;
 }
@@ -1339,6 +1340,7 @@ footer .music-player-list {
   flex: 25%;
   text-align: end;
   padding-right: 1rem;
+  padding-left: 10px;
 }
 footer .music-player-list a {
   text-decoration: none;
@@ -1353,7 +1355,6 @@ footer .music-player-list .music-player-list__combie--show {
 }
 footer .music-player-list .music-player-list__show-list {
   text-decoration: none;
-  font-size: 0.8rem;
   background-color: #1abc9c;
   padding: 0.5rem;
   border-radius: 5px;
@@ -1363,7 +1364,7 @@ footer .music-player-list .music-player-list__show-list {
 @media only screen and (max-width: 991px) {
   .aside__logo {
     padding: 10px 0;
-    margin: auto;
+    margin: 0px auto;
   }
   .aside__logo img {
     width: 30px;
@@ -1404,6 +1405,10 @@ footer .music-player-list .music-player-list__show-list {
     padding: 0px;
     padding-top: 10px;
   }
+
+  footer .music-player-list .music-player-list__show-list {
+    padding-right: 16px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .main__recently-items {
@@ -1443,6 +1448,28 @@ footer .music-player-list .music-player-list__show-list {
 
   .main__maybe-want-item:last-child, .main__maybe-want-item:nth-of-type(3) {
     margin-right: -20px;
+  }
+
+  footer .music-player-list a {
+    text-decoration: none;
+    font-size: 5px;
+    padding: 0.3rem;
+    padding-right: 1rem;
+    border-radius: 5px;
+    color: white;
+  }
+  footer .music-player-list .music-player-list__combie {
+    font-size: 15px;
+  }
+  footer .music-player-list .music-player-list__show-list {
+    font-size: 15px;
+    padding-right: 16px;
+  }
+}
+@media only screen and (max-width: 575px) {
+  aside {
+    display: none;
+    position: static;
   }
 }
 
