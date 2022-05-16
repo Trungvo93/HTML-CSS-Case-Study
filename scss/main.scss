@@ -449,7 +449,7 @@ main {
     h1 {
         font-size: large;
         font-weight: bold;
-        vertical-align: middle;
+        margin: auto;
     }
 
     span {
@@ -536,6 +536,7 @@ main {
     h1 {
         font-size: large;
         font-weight: 900;
+        margin: auto;
     }
 
     span {
@@ -632,6 +633,7 @@ main {
     h1 {
         font-size: large;
         font-weight: 900;
+        margin: auto;
     }
 
     span {
@@ -725,6 +727,7 @@ main {
     h1 {
         font-size: large;
         font-weight: 900;
+        margin: auto;
     }
 
     span {
@@ -818,6 +821,7 @@ main {
     h1 {
         font-size: large;
         font-weight: 900;
+        margin: auto;
     }
 
     span {
@@ -1084,6 +1088,7 @@ main {
     h1 {
         font-size: large;
         font-weight: 900;
+        margin: auto;
     }
 
     span {
@@ -1140,6 +1145,7 @@ main {
     h1 {
         font-size: large;
         font-weight: 900;
+        margin: auto;
     }
 
     span {
@@ -1299,6 +1305,7 @@ main {
     h1 {
         font-size: large;
         font-weight: 900;
+        margin: auto;
     }
 
     span {
@@ -1710,15 +1717,6 @@ footer {
         padding: 10px 15px;
     }
 
-    .main__recently-item:first-child,
-    .main__recently-item:nth-of-type(4) {
-        margin-left: -20px;
-    }
-
-    .main__recently-item:last-child,
-    .main__recently-item:nth-of-type(3) {
-        margin-right: -20px;
-    }
 
 
     // Maybe-want
@@ -1737,15 +1735,6 @@ footer {
         padding: 20px 20px;
     }
 
-    .main__maybe-want-item:first-child,
-    .main__maybe-want-item:nth-of-type(4) {
-        margin-left: -20px;
-    }
-
-    .main__maybe-want-item:last-child,
-    .main__maybe-want-item:nth-of-type(3) {
-        margin-right: -20px;
-    }
 
     // Radio Highlight
 
@@ -1808,6 +1797,50 @@ footer {
         // position: static;
     }
 
+    //Recently
+    .main__recently-items {
+        flex-wrap: wrap;
+    }
+    
+    .main__recently-item {
+        flex: 40%;
+    }
+
+    //Maybe-you-want
+    .main__maybe-want-items {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .main__maybe-want-item {
+        flex: 40%;
+        flex-grow: 0;
+    }
+
+    //Today Music
+    .main__today-music-items {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .main__today-music-item {
+        flex: 40%;
+        flex-grow: 0;
+    }
+    
+    //XONE CORNER
+    .main__xone-items {
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+    
+    .main__xone-item {
+        flex: 40%;
+        flex-grow: 0;
+    }
+
+
     // Radio Highlight
 
     .main__radio-items {
@@ -1825,12 +1858,19 @@ footer {
     }
 
     // Rank Music
-
-
     .main__rank-items {
       flex-direction: column;
     }
 
+    //MV HOT
+    .main__mv-items {
+
+        flex-direction: column;
+    }
+    
+    .main__mv-item {
+        padding-bottom: 50%;
+    }
     
 
     // Songs
@@ -1884,10 +1924,33 @@ footer {
 
     }
 
+
+    //INFO WEB
+    //Infor web
+.main__information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main__information--logo {
+    img {
+        width: 20%;
+        margin: auto;
+        
+    }
+}
+.main__information--social{
+    text-align: start;
+}
+
+
     //FOOTER
     footer {
 
-
+        .music-player-name__info {
+            display: none;
+        }
         .music-player-list {
 
             a {

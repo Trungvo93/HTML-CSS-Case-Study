@@ -367,7 +367,7 @@ main hr {
 .main__recently-title--item h1 {
   font-size: large;
   font-weight: bold;
-  vertical-align: middle;
+  margin: auto;
 }
 .main__recently-title--item span {
   vertical-align: middle;
@@ -438,6 +438,7 @@ main hr {
 .main__maybe-want-title--item h1 {
   font-size: large;
   font-weight: 900;
+  margin: auto;
 }
 .main__maybe-want-title--item span {
   font-size: small;
@@ -516,6 +517,7 @@ main hr {
 .main__today-music-title--item h1 {
   font-size: large;
   font-weight: 900;
+  margin: auto;
 }
 .main__today-music-title--item span {
   font-size: small;
@@ -595,6 +597,7 @@ main hr {
 .main__xone-title--item h1 {
   font-size: large;
   font-weight: 900;
+  margin: auto;
 }
 .main__xone-title--item span {
   font-size: small;
@@ -674,6 +677,7 @@ main hr {
 .main__radio-title--item h1 {
   font-size: large;
   font-weight: 900;
+  margin: auto;
 }
 .main__radio-title--item span {
   font-size: small;
@@ -899,6 +903,7 @@ main hr {
 .main__mv-title--item h1 {
   font-size: large;
   font-weight: 900;
+  margin: auto;
 }
 .main__mv-title--item span {
   font-size: small;
@@ -945,6 +950,7 @@ main hr {
 .main__event-title--item h1 {
   font-size: large;
   font-weight: 900;
+  margin: auto;
 }
 .main__event-title--item span {
   font-size: small;
@@ -1085,6 +1091,7 @@ main hr {
 .main__songs-title--item h1 {
   font-size: large;
   font-weight: 900;
+  margin: auto;
 }
 .main__songs-title--item span {
   font-size: small;
@@ -1426,16 +1433,6 @@ footer .music-player-list .music-player-list__show-list {
     padding: 10px 15px;
   }
 
-  .main__recently-item:first-child,
-.main__recently-item:nth-of-type(4) {
-    margin-left: -20px;
-  }
-
-  .main__recently-item:last-child,
-.main__recently-item:nth-of-type(3) {
-    margin-right: -20px;
-  }
-
   .main__maybe-want-items {
     display: flex;
     width: 100%;
@@ -1447,16 +1444,6 @@ footer .music-player-list .music-player-list__show-list {
     flex: 30%;
     flex-grow: 0;
     padding: 20px 20px;
-  }
-
-  .main__maybe-want-item:first-child,
-.main__maybe-want-item:nth-of-type(4) {
-    margin-left: -20px;
-  }
-
-  .main__maybe-want-item:last-child,
-.main__maybe-want-item:nth-of-type(3) {
-    margin-right: -20px;
   }
 
   .main__radio-items {
@@ -1501,6 +1488,44 @@ footer .music-player-list .music-player-list__show-list {
     display: none;
   }
 
+  .main__recently-items {
+    flex-wrap: wrap;
+  }
+
+  .main__recently-item {
+    flex: 40%;
+  }
+
+  .main__maybe-want-items {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .main__maybe-want-item {
+    flex: 40%;
+    flex-grow: 0;
+  }
+
+  .main__today-music-items {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .main__today-music-item {
+    flex: 40%;
+    flex-grow: 0;
+  }
+
+  .main__xone-items {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .main__xone-item {
+    flex: 40%;
+    flex-grow: 0;
+  }
+
   .main__radio-items {
     display: flex;
     width: 100%;
@@ -1517,6 +1542,14 @@ footer .music-player-list .music-player-list__show-list {
 
   .main__rank-items {
     flex-direction: column;
+  }
+
+  .main__mv-items {
+    flex-direction: column;
+  }
+
+  .main__mv-item {
+    padding-bottom: 50%;
   }
 
   .main__songs-items {
@@ -1555,6 +1588,24 @@ footer .music-player-list .music-player-list__show-list {
     font-size: 3vmin;
   }
 
+  .main__information {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .main__information--logo img {
+    width: 20%;
+    margin: auto;
+  }
+
+  .main__information--social {
+    text-align: start;
+  }
+
+  footer .music-player-name__info {
+    display: none;
+  }
   footer .music-player-list a {
     font-size: 15px;
   }
