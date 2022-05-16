@@ -382,11 +382,12 @@ main hr {
 
 .main__recently-items {
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 
 .main__recently-item {
-  flex: 16%;
+  flex: 20%;
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
   padding: 10px 0px;
@@ -1425,12 +1426,10 @@ footer .music-player-list .music-player-list__show-list {
 @media only screen and (max-width: 767px) {
   .main__recently-items {
     padding-top: 20px;
-    flex-wrap: wrap;
   }
 
   .main__recently-item {
-    flex: 30%;
-    padding: 10px 15px;
+    flex: 24%;
   }
 
   .main__maybe-want-items {
