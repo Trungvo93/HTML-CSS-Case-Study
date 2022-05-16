@@ -1460,6 +1460,16 @@ footer .music-player-list .music-player-list__show-list {
     padding: 20px 0;
   }
 
+  .main__event-card--info h3 {
+    font-size: 0.5rem;
+  }
+  .main__event-card--info h1 {
+    font-size: 1rem;
+  }
+  .main__event-card--info p {
+    font-size: 0.6rem;
+  }
+
   footer .music-player-list a {
     text-decoration: none;
     font-size: 5px;
