@@ -1035,14 +1035,14 @@ main hr {
 }
 
 .main__event-info--left-header h1 {
-  font-size: medium;
+  font-size: 0.7em;
 }
 
 .main__event-info--left-avatar {
   overflow: hidden;
 }
 .main__event-info--left-avatar img {
-  width: 7%;
+  width: 10px;
   border-radius: 50%;
 }
 .main__event-info--left-avatar span {
@@ -1056,6 +1056,7 @@ main hr {
   background-color: #1abc9c;
   border: 0px;
   border-radius: 20px;
+  font-size: 1.5vmin;
 }
 .main__event-info--right a {
   color: white;
@@ -1421,11 +1422,13 @@ footer .music-player-list .music-player-list__show-list {
     padding: 10px 15px;
   }
 
-  .main__recently-item:first-child, .main__recently-item:nth-of-type(4) {
+  .main__recently-item:first-child,
+.main__recently-item:nth-of-type(4) {
     margin-left: -20px;
   }
 
-  .main__recently-item:last-child, .main__recently-item:nth-of-type(3) {
+  .main__recently-item:last-child,
+.main__recently-item:nth-of-type(3) {
     margin-right: -20px;
   }
 
@@ -1442,12 +1445,28 @@ footer .music-player-list .music-player-list__show-list {
     padding: 20px 20px;
   }
 
-  .main__maybe-want-item:first-child, .main__maybe-want-item:nth-of-type(4) {
+  .main__maybe-want-item:first-child,
+.main__maybe-want-item:nth-of-type(4) {
     margin-left: -20px;
   }
 
-  .main__maybe-want-item:last-child, .main__maybe-want-item:nth-of-type(3) {
+  .main__maybe-want-item:last-child,
+.main__maybe-want-item:nth-of-type(3) {
     margin-right: -20px;
+  }
+
+  .main__radio-items {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .main__radio-item {
+    flex: 20%;
+    flex-grow: 0;
+    padding: 20px 0;
   }
 
   footer .music-player-list a {
@@ -1469,7 +1488,70 @@ footer .music-player-list .music-player-list__show-list {
 @media only screen and (max-width: 575px) {
   aside {
     display: none;
-    position: static;
+  }
+
+  .main__radio-items {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .main__radio-item {
+    flex: 20%;
+    flex-grow: 0;
+    padding: 20px 0;
+  }
+
+  .main__rank-items {
+    flex-direction: column;
+  }
+
+  .main__songs-items {
+    flex-direction: column;
+  }
+
+  .main__event-items {
+    flex-direction: column;
+  }
+
+  .main__event-item {
+    flex: 100%;
+  }
+
+  .main__event-info {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .main__event-info--left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main__event-info--left-header h1 {
+    font-size: 1.5em;
+  }
+
+  .main__event-info--left-avatar img {
+    width: 20px;
+  }
+
+  .main__event-info--right button {
+    font-size: 3vmin;
+  }
+
+  footer .music-player-list a {
+    font-size: 15px;
+  }
+  footer .music-player-list .music-player-list__combie--show {
+    display: inline;
+  }
+  footer .music-player-list .music-player-list__combie {
+    display: none;
   }
 }
 
