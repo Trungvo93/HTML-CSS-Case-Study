@@ -156,6 +156,10 @@ header a:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+.header__right--show {
+  display: none;
+}
+
 .header__right--item:hover .title {
   display: block;
 }
@@ -1486,6 +1490,13 @@ footer .music-player-list .music-player-list__show-list {
   }
 }
 @media only screen and (max-width: 575px) {
+  header .header__right--item {
+    display: none;
+  }
+  header .header__right--show {
+    display: block;
+  }
+
   aside {
     display: none;
   }

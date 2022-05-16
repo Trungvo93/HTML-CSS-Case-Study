@@ -205,6 +205,9 @@ header {
     }
 }
 
+.header__right--show{
+    display: none;
+}
 .header__right--item:hover .title {
     display: block;
 }
@@ -1787,6 +1790,19 @@ footer {
 }
 
 @media only screen and (max-width:575px) {
+
+    //HEADER
+    header{
+        
+        .header__right--item {
+            display: none;
+        }
+        
+        .header__right--show{
+            display:block;
+        }
+    }
+    
     aside {
         display: none;
         // position: static;
